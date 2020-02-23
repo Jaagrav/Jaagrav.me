@@ -76,10 +76,10 @@
 
         .info {
             position: absolute;
-            height: 100%;
+            height: 85%;
             width: 100%;
             margin: auto;
-            top: 200%;
+            top: 185%;
             right: 0;
             bottom: 0;
             background: linear-gradient(#2f36a5, #202672, #141849, #0a0c25);
@@ -93,6 +93,85 @@
             right: 0;
             left: 0;
         }
+
+        .myFace {
+            position: absolute;
+            margin: auto;
+            height: 180px;
+            right: 0;
+            left: 0;
+            border-radius: 50px;
+        }
+
+        .name {
+            position: absolute;
+            color: white;
+            margin: auto;
+            height: 180px;
+            width: 100%;
+            text-align: center;
+            right: 0;
+            left: 0;
+            top: 200px;
+            font-family: 'Alegreya Sans SC';
+        }
+
+        .tags {
+            position: absolute;
+            margin: auto;
+            height: 180px;
+            width: 100%;
+            text-align: center;
+            right: 0;
+            left: 0;
+            top: 250px;
+            color: white;
+            font-family: 'Poppins';
+        }
+
+        .desc {
+            position: absolute;
+            margin: auto;
+            height: 98px;
+            width: 95%;
+            text-align: center;
+            right: 0;
+            left: 0;
+            top: 290px;
+            color: white;
+            font-family: 'Poppins';
+            padding: 4px;
+        }
+
+        .nav {
+            position: absolute;
+            height: 50px;
+            width: 80%;
+            margin: auto;
+            right: 0;
+            left: 0;
+            top: 400px;
+        }
+
+        .navHome {
+            position: absolute;
+            margin: auto;
+            right: 0;
+            filter: invert(1);
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 30px;
+        }
+
+        .navSkills {
+            position: absolute;
+            height: 25px;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -104,18 +183,30 @@
                     src="http://instragram.com/favicon.ico"></a>
             <a href="mailto:jaagravseal03@gmail.com" target="_blank"><img src="https://google.com/favicon.ico"></a>
         </div>
-        <center><video src="./visual content/SuperTrofeo4K.mp4" class="bgVdo" loop muted autoplay></video></center>
+        <center><video src="https://github.com/Jaagrav/Jaagrav.me/visual content/SuperTrofeo4K.mp4" class="bgVdo" loop
+                muted autoplay></video></center>
         <h1 class="im">I'm<br>Jaagrav</h1>
         <h1 class="ox">DESIGNER • DEVELOPER</h1>
     </div>
     <img src="./visual content/Facebook Post 940x788 px (1).png" class="navBegin">
     <div class="info">
-
+        <img src="./visual content/MyFreakingImage.jpg" class="myFace">
+        <h1 class="name">Jaagrav Seal</h1>
+        <h4 class="tags">Web Developer • UI/UX Designer</h4>
+        <h5 class="desc">I love cars and UI Designing. I speak English, Hindi, Bengali, JavaScript, Java, HTML
+            and CSS. I am 16 years
+            old, a huge coding enthusiast. My day starts with designing and ends with coding.</h5>
+        <div class="nav">
+            <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_account_circle_48px-512.png"
+                class="navHome">
+            <img src="https://lh3.googleusercontent.com/proxy/9BWg2h8ilXdA2UI-SjV7De8b2fznxWVPhGSS54R9dFFVVIJAw__C1rk9v8Xwc2HdOuB2FICDvNDLwPv8eYmnaGSMti210Wbumi58jxoqMKq2a7D_jNgX0bBGQjfdA3aTc12yWJb61Ix9eA"
+                class="navSkills">
+        </div>
     </div>
     <script>
         document.querySelector(".bgVdo").currentTime = 45;
         document.querySelector(".bgVdo").play();
-</script>
+    </script>
 </body>
 
 </html>
