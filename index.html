@@ -100,7 +100,7 @@
             height: 180px;
             right: 0;
             left: 0;
-            border-radius: 50px;
+            border-radius: 50%;
         }
 
         .name {
@@ -150,7 +150,8 @@
             margin: auto;
             right: 0;
             left: 0;
-            top: 400px;
+            top: 390px;
+            z-index: +3;
         }
 
         .navHome {
@@ -182,6 +183,42 @@
             bottom: 0;
             border-radius: 50%;
         }
+
+        .Home,
+        .Skills,
+        .Projects {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            transition: 1s;
+        }
+
+        .Skills {
+            background: #000;
+            transform: translateX(-100%);
+        }
+
+        .Projects {
+            background: #000;
+            transform: translateX(100%);
+        }
+
+        .sets {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
     </style>
 </head>
 
@@ -193,25 +230,38 @@
                     src="http://instragram.com/favicon.ico"></a>
             <a href="mailto:jaagravseal03@gmail.com" target="_blank"><img src="https://google.com/favicon.ico"></a>
         </div>
-        <center><video src="./visual content/SuperTrofeo4K.mp4" class="bgVdo" loop
-                muted autoplay></video></center>
+        <center><video src="./visual content/SuperTrofeo4K.mp4" class="bgVdo" loop muted autoplay></video></center>
         <h1 class="im">I'm<br>Jaagrav</h1>
         <h1 class="ox">DESIGNER • DEVELOPER</h1>
     </div>
     <img src="./visual content/Facebook Post 940x788 px (1).png" class="navBegin">
     <div class="info">
-        <img src="./visual content/MyFreakingImage.jpg" class="myFace">
-        <h1 class="name">Jaagrav Seal</h1>
-        <h4 class="tags">Web Developer • UI/UX Designer</h4>
-        <h5 class="desc">I love cars and UI Designing. I speak English, Hindi, Bengali, JavaScript, Java, HTML
-            and CSS. I am 16 years
-            old, a huge coding enthusiast. My day starts with designing and ends with coding.</h5>
-        <div class="nav">
-            <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_account_circle_48px-512.png"
-                class="navHome">
-            <img src="https://lh3.googleusercontent.com/proxy/9BWg2h8ilXdA2UI-SjV7De8b2fznxWVPhGSS54R9dFFVVIJAw__C1rk9v8Xwc2HdOuB2FICDvNDLwPv8eYmnaGSMti210Wbumi58jxoqMKq2a7D_jNgX0bBGQjfdA3aTc12yWJb61Ix9eA"
-                class="navSkills">
-            <img src="https://d1kz0yd1invg7i.cloudfront.net/uploads/app/icon/2/tasks-icon-big.png" class="navProjects">
+        <div class="sets">
+            <div class="Skills">
+
+            </div>
+            <div class="Home">
+                <img src="./visual content/MyFreakingImage.jpg" class="myFace">
+                <h1 class="name">Jaagrav Seal</h1>
+                <h4 class="tags">Web Developer • UI/UX Designer</h4>
+                <h5 class="desc">I love cars and UI Designing. I speak English, Hindi, Bengali, JavaScript, Java, HTML
+                    and CSS. I am 16 years
+                    old, a huge coding enthusiast. My day starts with designing and ends with coding.</h5>
+            </div>
+            <div class="Projects">
+
+            </div>
+            <div class="nav">
+                <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_account_circle_48px-512.png"
+                    class="navHome"
+                    onclick="document.querySelector('.Home').style.transform = 'translateX(0)';document.querySelector('.Skills').style.transform = 'translateX(-100%)';document.querySelector('.Projects').style.transform = 'translateX(100%)';">
+                <img src="https://lh3.googleusercontent.com/proxy/9BWg2h8ilXdA2UI-SjV7De8b2fznxWVPhGSS54R9dFFVVIJAw__C1rk9v8Xwc2HdOuB2FICDvNDLwPv8eYmnaGSMti210Wbumi58jxoqMKq2a7D_jNgX0bBGQjfdA3aTc12yWJb61Ix9eA"
+                    class="navSkills"
+                    onclick="document.querySelector('.Home').style.transform = 'translateX(100%)';document.querySelector('.Skills').style.transform = 'translateX(0)';document.querySelector('.Projects').style.transform = 'translateX(100%)';">
+                <img src="https://d1kz0yd1invg7i.cloudfront.net/uploads/app/icon/2/tasks-icon-big.png"
+                    class="navProjects"
+                    onclick="document.querySelector('.Home').style.transform = 'translateX(-100%)';document.querySelector('.Skills').style.transform = 'translateX(-100%)';document.querySelector('.Projects').style.transform = 'translateX(0)';">
+            </div>
         </div>
     </div>
     <script>
