@@ -230,6 +230,29 @@
             width: 100%;
             overflow: scroll;
         }
+        .poder{
+            position: fixed;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+            background: #000;
+            transition: 1s;
+            filter: opacity(1);
+        }
+      .poder img {
+            position: fixed;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+      }
     </style>
 </head>
 
@@ -276,9 +299,16 @@
             </div>
         </div>
     </div></div>
+    <div class="poder">
+         <img src="https://i.pinimg.com/originals/07/bf/6f/07bf6f0f7d5dd64829822e95e97f908d.gif">
+    </div>
     <script>
         document.querySelector(".bgVdo").currentTime = 45;
         document.querySelector(".bgVdo").play();
+        window.onload = function(){
+            document.querySelector(".poder").style.filter="opacity(0)";
+            document.querySelector(".poder").style.zIndex="-2";
+};
     </script>
 </body>
 
