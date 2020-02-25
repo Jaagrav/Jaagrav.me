@@ -7,21 +7,7 @@
     <title>Jaagrav - Home</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins|Alegreya+Sans+SC&display=swap');
-        html {
-  overflow: hidden;
-  width: 100%;
-}
-
-body {
-  height: 100%;
-  position: fixed;
-  /* prevent overscroll bounce*/
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  /* iOS velocity scrolling */
-  width: 50%;
-  margin-left: 25%;
-}
+        html, body {margin: 0; height: 100%; overflow: hidden}
         .page {
             position: fixed;
             height: 100%;
@@ -257,6 +243,7 @@ body {
             background: #fff;
             transition: 1s;
             filter: opacity(1);
+            z-index:5;
         }
       .poder img {
             position: fixed;
