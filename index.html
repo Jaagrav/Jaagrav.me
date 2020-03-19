@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaagrav - Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins|Alegreya+Sans+SC&display=swap');
+
+        html {
+            position: fixed;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .page {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .bgVdo {
+            position: fixed;
+            height: 100%;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .im {
+            position: fixed;
+            height: 200px;
+            width: 80%;
+            color: white;
+            font-size: 70px;
+            font-family: 'Alegreya Sans SC';
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+        }
+
+        .ox {
+            position: fixed;
+            margin: auto;
+            top: 12.5pc;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            font-size: 15px;
+            height: 20px;
+            text-align: center;
+            width: 80%;
+            font-family: 'Poppins';
+            color: white;
+        }
+
+        .links {
+            position: fixed;
+            z-index: +3;
+            margin: auto;
+            right: 15px;
+            top: 15px;
+        }
+
+        .links img {
+            height: 25px;
+            border-radius: 50px;
+        }
+
+        .info {
+            position: absolute;
+            height: 85%;
+            width: 100%;
+            margin: auto;
+            top: 184.5%;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(#2f36a5, #202672, #141849, #0a0c25);
+        }
+
+        .navBegin {
+            position: absolute;
+            width: 100%;
+            margin: auto;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .myFace {
+            position: absolute;
+            margin: auto;
+            height: 180px;
+            top: 10px;
+            right: 0;
+            left: 0;
+            box-shadow: 0 0 15px white;
+            border-radius: 50%;
+        }
+
+        .name {
+            position: absolute;
+            color: white;
+            margin: auto;
+            height: 180px;
+            width: 100%;
+            text-align: center;
+            right: 0;
+            left: 0;
+            top: 210px;
+            font-family: 'Alegreya Sans SC';
+        }
+
+        .tags {
+            position: absolute;
+            margin: auto;
+            height: 180px;
+            width: 100%;
+            text-align: center;
+            right: 0;
+            left: 0;
+            top: 250px;
+            color: white;
+            font-family: 'Poppins';
+        }
+
+        .desc {
+            position: absolute;
+            margin: auto;
+            height: 98px;
+            width: 95%;
+            text-align: center;
+            right: 0;
+            left: 0;
+            top: 290px;
+            color: white;
+            font-family: 'Poppins';
+            padding: 4px;
+        }
+
+        .nav {
+            position: absolute;
+            height: 50px;
+            width: 80%;
+            margin: auto;
+            right: 0;
+            left: 0;
+            bottom: 5px;
+            z-index: +3;
+        }
+
+        .navHome {
+            position: absolute;
+            margin: auto;
+            right: 0;
+            filter: invert(1);
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 30px;
+        }
+
+        .navSkills {
+            position: absolute;
+            height: 25px;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 50%;
+        }
+
+        .navProjects {
+            position: absolute;
+            height: 25px;
+            margin: auto;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 50%;
+        }
+
+        .Home,
+        .Skills,
+        .Projects {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            transition: 1s;
+        }
+
+        .Skills {
+            bac/kground: linear-gradient(#2f36a5, #202672, #141849, #0a0c25);
+            transform: translateX(-100%);
+        }
+
+        .Projects {
+            background: linear-gradient(#2f36a5, #202672, #141849, #0a0c25);
+            transform: translateX(100%);
+        }
+
+        .sets {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .poop {
+            position: fixed;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+            overscroll-behavior: none;
+        }
+
+        .poder {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+            background: #fff;
+            transition: 1s;
+            filter: opacity(1);
+            z-index: 5;
+        }
+
+        .poder img {
+            position: fixed;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <audio class="audio" loop autoplay
+        src="./visual content/y2mate.com - Pandemonium (Tribute Version) - Mondays feat. Hanna Stone, Dag Lundberg [Acoustic Group]_tp1zhEEJxew.mp3"></audio>
+    <div class="poop">
+
+        <div class="page">
+            <div class="poder">
+                <img src="https://i.pinimg.com/originals/07/bf/6f/07bf6f0f7d5dd64829822e95e97f908d.gif">
+            </div>
+            <div class="links">
+                <a href="https://www.github.com/Jaagrav" target="_blank"><img
+                        src="https://www.github.com/favicon.ico"></a>
+                <a href="https://www.instagram.com/hooligan.jaagrav" target="_blank"><img
+                        src="http://instragram.com/favicon.ico"></a>
+                <a href="mailto:jaagravseal03@gmail.com" target="_blank"><img src="https://google.com/favicon.ico"></a>
+            </div>
+            <center><video onclick="peepee()" src="./visual content/videoplayback.mp4" class="bgVdo" loop muted
+                    autoplay></video></center>
+            <h1 class="im">I'm<br>Jaagrav</h1>
+            <h1 class="ox">DESIGNER • DEVELOPER</h1>
+        </div>
+        <img src="./visual content/Facebook Post 940x788 px (1).png" class="navBegin">
+        <div class="info">
+            <div class="sets">
+                <div class="Skills">
+
+                </div>
+                <div class="Home">
+                    <img src="./visual content/MyFreakingImage.jpg" class="myFace">
+                    <h1 class="name">Jaagrav Seal</h1>
+                    <h3 class="tags">Digital Creator</h3>
+                    <h4 class="desc">Currently, I am a 16 year old Science Student at National English School, Kolkata.
+                        Coding is my passion. Besides for that I also create AR filters on Instagram. <br>I get $#!T
+                        done. I like designing websites with my special powers, designing and coding that many find
+                        boring. Also, I love mountains, I love peace.
+                    </h4>
+                </div>
+                <div class="Projects">
+
+                </div>
+                <div class="nav">
+                    <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_account_circle_48px-512.png"
+                        class="navHome"
+                        onclick="document.querySelector('.Home').style.transform = 'translateX(0)';document.querySelector('.Skills').style.transform = 'translateX(-100%)';document.querySelector('.Projects').style.transform = 'translateX(100%)';">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSL9VWYI7-zyrjl05cy4N0qee0e3G45Yo8fFdYfVU3gavm5OsDA"
+                        class="navSkills"
+                        onclick="document.querySelector('.Home').style.transform = 'translateX(100%)';document.querySelector('.Skills').style.transform = 'translateX(0)';document.querySelector('.Projects').style.transform = 'translateX(100%)';">
+                    <img src="https://d1kz0yd1invg7i.cloudfront.net/uploads/app/icon/2/tasks-icon-big.png"
+                        class="navProjects"
+                        onclick="document.querySelector('.Home').style.transform = 'translateX(-100%)';document.querySelector('.Skills').style.transform = 'translateX(-100%)';document.querySelector('.Projects').style.transform = 'translateX(0)';">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            document.querySelector(".poder").style.filter = "opacity(0)";
+            setTimeout(() => { document.querySelector(".poder").style.zIndex = '-2' }, 1000);
+        };
+        var a = true;
+        function peepee() {
+            var audio = document.querySelector(".audio");
+            if (a) { audio.pause(); a = false; } else { audio.play(); a = true; }
+        }
+    </script>
+</body>
+
+</html>
