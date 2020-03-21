@@ -107,7 +107,7 @@
             position: absolute;
             margin: auto;
             height: 180px;
-            top: 10px;
+            top: 15px;
             right: 0;
             left: 0;
             box-shadow: 0 0 15px white;
@@ -123,7 +123,7 @@
             text-align: center;
             right: 0;
             left: 0;
-            top: 210px;
+            top: 215px;
             font-family: 'Alegreya Sans SC';
         }
 
@@ -135,7 +135,7 @@
             text-align: center;
             right: 0;
             left: 0;
-            top: 250px;
+            top: 255px;
             color: white;
             font-family: 'Poppins';
         }
@@ -218,6 +218,9 @@
         .Projects {
             background: linear-gradient(#2f36a5, #202672, #141849, #0a0c25);
             transform: translateX(100%);
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
         }
 
         .sets {
@@ -270,14 +273,63 @@
             bottom: 0;
             height: 100px;
         }
+
+        .protext {
+            position: absolute;
+            color: white;
+            font-family: 'Poppins';
+            font-size: 50px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .p1,
+        .p2,
+        .p3,
+        .p4,
+        .p5,
+        .p6 {
+            position: relative;
+            width: 70%;
+            color: white;
+            font-family: 'Poppins';
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 35px #444ba1;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .altImg {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .skillmage {
+            position: absolute;
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
     </style>
 </head>
 
 <body>
-    <audio class="audio" loop autoplay controls
-        src="./visual content/y2mate.com - Pandemonium (Tribute Version) - Mondays feat. Hanna Stone, Dag Lundberg [Acoustic Group]_tp1zhEEJxew.mp3"></audio>
-    <div class="poop">
 
+    <audio class="audio"
+        src="./visual content/y2mate.com - Pandemonium (Tribute Version) - Mondays feat. Hanna Stone, Dag Lundberg [Acoustic Group]_tp1zhEEJxew.mp3"
+        loop autoplay></audio>
+    <div class="poop">
         <div class="page">
             <div class="poder">
                 <img src="https://i.pinimg.com/originals/07/bf/6f/07bf6f0f7d5dd64829822e95e97f908d.gif">
@@ -289,16 +341,18 @@
                         src="http://instragram.com/favicon.ico"></a>
                 <a href="mailto:jaagravseal03@gmail.com" target="_blank"><img src="https://google.com/favicon.ico"></a>
             </div>
-            <center><video onclick="peepee()" src="./visual content/videoplayback-1 (1).mp4" class="bgVdo" loop muted
+            <img src="https://images.pexels.com/photos/3610649/pexels-photo-3610649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                id="altImg">
+            <center><video onclick="peepee()" src="./visual content/videoplayback.mp4" class="bgVdo" loop muted
                     autoplay></video></center>
             <h1 class="im">I'm<br>Jaagrav</h1>
             <h1 class="ox">DESIGNER • DEVELOPER</h1>
         </div>
-        <img src="./visual content/Facebook Post 940x788 px (1).png" class="navBegin">
+        <img onclick="peepee();" src="./visual content/Facebook Post 940x788 px (1).png" class="navBegin">
         <div class="info">
             <div class="sets">
                 <div class="Skills">
-
+                    <img src="./visual content/page-01.png" class="skillmage">
                 </div>
                 <div class="Home">
                     <img src="./visual content/MyFreakingImage.jpg" class="myFace">
@@ -311,7 +365,74 @@
                     </h4>
                 </div>
                 <div class="Projects">
-
+                    <h1 class="protext">Projects</h1>
+                    <br><br><br><br><br><br><br>
+                    <center>
+                        <a href="https://jaagrav.github.io/Stalk-Hub/">
+                            <div class="p1">
+                                <h1>Github Profiles Lookup</h1>
+                                <h3>A web app developed using the Github data API which displays the information of
+                                    people
+                                    on
+                                    Github in a different and dark UI, who doesn't want dark mode on Github.</h3>
+                            </div>
+                        </a>
+                        <br><br>
+                        <a href="https://jaagrav.github.io/ToDo-List-Web-App-Mobile/">
+                            <div class="p2">
+                                <h1>ToDo List UI</h1>
+                                <h3>A working ToDo list app that stores or your stuff to be done for you and remembers
+                                    it
+                                    even
+                                    when you close your browser, the web app uses Browser Local Storage of your device
+                                    in
+                                    order
+                                    to save your tasks.</h3>
+                            </div>
+                        </a>
+                        <br><br>
+                        <a href="https://jaagrav.github.io/Web-Calculator/">
+                            <div class="p3">
+                                <h1>Web Calculator</h1>
+                                <h3>A Calculator with an awesome UI, ofcourse with a built-in dark mode that can
+                                    calculate
+                                    your
+                                    petty stuff on the go without any JavaScript eval errors!</h3>
+                            </div>
+                        </a>
+                        <br><br>
+                        <a href="https://jaagrav.github.io/Weather-Mobile-Web-App/">
+                            <div class="p4">
+                                <h1>Weather App</h1>
+                                <h3>A weather app that uses the openweather API in order to collect basic weather data
+                                    of
+                                    the
+                                    searched location within a very simple but attractive UI.</h3>
+                            </div>
+                        </a>
+                        <br><br>
+                        <a href="https://jaagrav.github.io/Google-News-API/">
+                            <div class="p5">
+                                <h1>Google News App UI</h1>
+                                <h3>A Web App to read news and gain information about anything going across the world.
+                                    It
+                                    uses
+                                    the Google News API in order to get the information.</h3>
+                            </div>
+                        </a>
+                        <br><br>
+                        <a href="https://jaagrav.github.io/Music-Player/">
+                            <div class="p6">
+                                <h1>Music Player</h1>
+                                <h3>Just a normal music player that basically plays a few songs that you might like. I
+                                    am
+                                    making
+                                    a Music Web App that can play whatever you want to. Coming soon with an awesome UI!
+                                </h3>
+                            </div>
+                        </a>
+                        <br><br><br>
+                    </center>
                 </div>
                 <div class="nav">
                     <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_account_circle_48px-512.png"
@@ -329,10 +450,9 @@
     </div>
     <script>
         window.onload = function () {
-            peepee();peepee();
             document.querySelector(".poder").style.filter = "opacity(0)";
             setTimeout(() => { document.querySelector(".poder").style.zIndex = '-2' }, 1000);
-};
+        };
         var a = true;
         function peepee() {
             var audio = document.querySelector(".audio");
